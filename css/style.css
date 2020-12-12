@@ -83,11 +83,12 @@ nav{
 	width:100%;
 	height:90vh;
 }
-.video{
+.image-container{
 	width:100%;
-	position:absolute;
-	left:0px;
-	top:0px;
+}
+.image{
+	width:100%;
+	height:100%;
 }
 .overlay-text{
 	padding:20px 30px;
@@ -224,8 +225,8 @@ footer{
 }
 .box{
 	width:20%;
-	height:50%;
-	border-radius:10%;
+	height:70%;
+	border-radius:10px;
 	margin:6.6% 3%;
 	text-align:center;
 	padding:40px;
@@ -268,13 +269,14 @@ hr{
 	align-items:center;
 	justify-content:center;
 }
+
 .gallery-container{
 	margin-top:7%;
 	margin-bottom:7%;
 	position:relative;
 	width:100%;
 	display:flex;
-	justify-content:center;
+	justify-content:space-around;
 	align-items:center;
 	flex-wrap:wrap;
 	padding:30px;
@@ -331,9 +333,13 @@ hr{
 }
 .container-contact h2{
 	margin-bottom:10px;
+	text-align:center;
+	color:#FFF;
+	font-size:50px;
 }
 .container-contact p{
-	margin-bottom:10px;
+	margin-bottom:50px;
+	text-align:center;
 }
 .contact-box{
 	background-color:white;
@@ -342,6 +348,14 @@ hr{
 .contact-left{
 	flex-basis:60%;
 	padding:40px 60px;
+}
+.contact-left h3{
+	font-weight:600;
+	margin-bottom:30px;
+}
+.contact-right h3{
+	font-weight:600;
+	margin-bottom:30px;
 }
 .contact-right{
 	flex-basis:40%;
@@ -356,9 +370,40 @@ hr{
 .input-row .input-group{
 	flex-basis:45%;
 }
-input[text,email]{
+.input{
 	width:100%;
+	border:none;
 	color:black;
+	border-bottom:2px solid #FFD700;
+	outline:none;
+	padding-bottom:5px;
+}
+textarea{
+	color:#012C7C;
+	width:100%;
+	border:2px solid #FFD700;
+	outline:none;
+	padding:10px;
+	box-sizing:border-box;
+}
+.label{
+	margin-bottom:6px;
+	display:block;
+	color:#012C7C;
+}
+button{
+	background-color:#5ba8cd;
+	width:100px;
+	border:none;
+	outline:none;
+	color:#fff;
+	margin-top:20px;
+	padding:10px 5px;
+	cursor:pointer;
+}
+.tr td{
+  padding-top:50px;
+  font-size:20px;
 }
 /*o autoru*/
 .about{
@@ -385,13 +430,14 @@ input[text,email]{
 	border:2px solid #FFD700;
 }
 .about-text h2{
-	color:#FFD700;
+	color:#FFF;
 	text-align:center;
 	margin-bottom:20px;
+	font-size:50px;
 }
 .about-text p{
 	text-align:center;
-	color:white;
+	color:#FFD700;
 }
 .about-slika{
 	width:50%;
